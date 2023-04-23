@@ -1,0 +1,125 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+:root{
+    --transition: all 400ms ease;
+    --bg-color:#F3DEBA;
+    --color1:#A9907E;
+    --color2: #ABC4AA;
+    --color3: #675D50;
+}
+
+body{
+    background-color:#F3DEBA;
+}
+/* ===================== NAVBAR ===========*/
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+
+}
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_container a img{
+    width: 20%;
+    margin-left: 5%;
+    
+}
+nav button{
+    display: none;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 2%;
+}
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: var(--transition );
+    text-decoration: none;
+    color: var(--color3);
+}
+.nav_menu li{
+    list-style: none;
+}
+.nav_menu a:hover{
+    color: black;
+}
+.menu{
+    display: none   
+}
+
+@media (max-width: 480px) {
+    /* Your CSS rules here */
+    .nav_menu{
+        display: none;
+    }
+    .menuItem {
+        display: block;
+        margin: 2rem 1rem 0.5rem 10rem;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+      }
+      
+      .menuItem:hover {
+        text-decoration: underline;
+      }
+      
+      .hamburger {
+        display: inline;
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background:var(--bg-color);
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+      }
+      
+      .hamburger  > .closeIcon {
+        display: none;
+      }
+      
+      .menu {
+        
+        position: fixed;
+        transform: translateY(-10%);
+        transition: transform 0.5s;
+        top: 5%;
+        left: 25%;
+        right: 0;
+        bottom: 0;
+        height: 40vh;
+        z-index: 99;
+        background:var(--color3);
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+        
+      }
+      .menu li{
+        position: relative;
+        top:-2rem
+      }
+      
+      .showMenu {
+        transform: translateX(100);
+      }
+    
+
+}
