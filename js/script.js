@@ -1,21 +1,22 @@
 window.addEventListener('scroll', () => {
-    document.querySelector('nav').classList.toggle
+    document.querySelector('#nav').classList.toggle
     ('window-scroll', window.scrollY > 0)
     document.querySelector("nav").style.transition = "400ms ease-out"
 })
 
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 1,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   const menu = document.querySelector(".menu");
   const menuItems = document.querySelectorAll(".menuItem");
   const hamburger= document.querySelector(".hamburger");
@@ -49,7 +50,21 @@ window.addEventListener('scroll', () => {
    
   )
   hamburger.addEventListener("click", toggleMenu);
- 
 
+ const search = document.querySelector('.search')
+const searchBtn = document.getElementById("search-btn");
+const searchBtn2 = document.getElementById("search-btn2");
+const searchBox = document.getElementById("search-box");
+searchBtn.onclick = function() {
+   
+   searchBox.style.display= "flex";
+   searchBtn.style.display="none";
+   searchBtn2.style.display="flex";
+}
+searchBtn2.onclick = function() {
+  searchBox.style.display = "none";
+  searchBtn.style.display = "flex"
+  searchBtn2.style.display = "none"
 
- 
+  
+}
