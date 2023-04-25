@@ -333,7 +333,9 @@ a.button:hover {
       }
     
   /* After Nav Section */
-
+  .after-nav{
+      margin-top:11%;
+    }
   .after-nav .search > {
     display: none;
     border-radius: 10px;
