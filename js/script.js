@@ -22,6 +22,7 @@ var swiper = new Swiper(".mySwiper", {
   const hamburger= document.querySelector(".hamburger");
   const closeIcon= document.querySelector(".closeIcon");
   const menuIcon = document.querySelector(".menuIcon");
+  const aftNav = document.querySelector(".after-nav");
   // closeIcon.style.color = '#F3DEBA';
   function toggleMenu() {
       if (menu.classList.contains("showMenu")) {
@@ -29,6 +30,7 @@ var swiper = new Swiper(".mySwiper", {
         closeIcon.style.display = "none";
         menuIcon.style.display = "block";
         menu.style.display = "none";
+        aftNav.style.zindex = "99"
       } else {
         menu.classList.add("showMenu");
         closeIcon.style.display = "block";

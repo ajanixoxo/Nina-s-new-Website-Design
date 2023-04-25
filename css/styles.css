@@ -10,7 +10,7 @@ box-sizing:border-box;
     --color1:#A9907E;
     --color2: #ABC4AA;
     --color3: #675D50;
-    --color4: green;
+    --color4: lightgreen;
     --color5: white;
     --color6: black;
 }
@@ -23,7 +23,7 @@ body{
 /* ===================== NAVBAR ===========*/
 .window-scroll{
   width: 100%;
-  background-color: rgb(172, 165, 165);
+  background-color: var(--color4)
 }
 nav{
     background: white;
@@ -78,8 +78,9 @@ nav button{
 .after-nav{
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
-  top:13%;
+  position: fixed;
+  z-index: 10;
+  top:9%;
   width:100%;
   padding-top:10px;
   background-color:black
@@ -114,7 +115,7 @@ nav button{
 .after-nav .search #search-btn{
   cursor: pointer;
   z-index: 100;
-  color: var(--color4);
+  color: var(--color5);
 }
 #search-btn2{
   display: none;
@@ -157,22 +158,24 @@ nav button{
   background-color: rgb(32, 29, 29);
 }
 .page2{
-  background-color: red;
+  background-color: rgba(226, 17, 17, 0.829);
 }
 .page3{
   background-color: rgba(230, 145, 145, 0.608);
 }
 .page2 > .image2{
   position: absolute;
-   height: 70vh;
-   width:100%;
-   top:-1%;
+   height: 7 0vh;
+   width:30%;
+   top:1%;
+   right:10%;
 }
 .page3 > .image3{
   position: absolute;
    height: 70vh;
-   width:100%;
+   width:30%;
    top:-1%;
+   right:0;
 }
 .image-data .p2-color{
    color:rgb(234, 234, 234);
@@ -343,15 +346,24 @@ a.button:hover {
   font-size: 20px;
   padding-right: 20px;
   }
-  .after-nav .search #search-btn{
+  .after-nav .search #search-btn2{
+    display: none;
+    position: absolute;
     cursor: pointer;
-    margin-right: -12%;
-    z-index: 50;
-    color: var(--color4);
+    margin-right:-2%;
+    width: 20px;
+    z-index: 999;
+    color: var(--color6);
   }
   .after-nav .search #search-btn{
     cursor: pointer;
    
+  }
+  .after-nav .search #search-box{
+    display: none;
+    margin-left: 30px;
+    width: 100%;
+    height: 60%;
   }
   /*main section*/
   .main {
@@ -360,6 +372,13 @@ a.button:hover {
   }
   .image-data .firstext{
     font-size: 30px;
+  }
+  .page1 .image{
+    position: absolute;
+    width: 100%;
+    left: 20;
+    height: 70vh;
+    
   }
   .page2{
    background-color: red;
