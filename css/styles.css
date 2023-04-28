@@ -14,11 +14,11 @@ box-sizing:border-box;
     --color5: white;
     --color6: black;
 }
-
 body{
-    background-color:white;
-    height: 200vh;;
+  overflow-x: hidden;
+  /* height: 200vh; */
 }
+
 
 /* ===================== NAVBAR ===========*/
 .window-scroll{
@@ -64,7 +64,7 @@ nav button{
     list-style: none;
 }
 .nav_menu a:hover{
-    color: white;
+    color: rgb(102, 101, 101);
     
 }
 .menu{
@@ -329,8 +329,9 @@ a.button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0 20%;
+  max-width: 1000px;
+  width: 100%;
   }
   
   .product {
@@ -541,14 +542,9 @@ a.button:hover {
     background-color: #4070F4;
   }
   
-  @media screen and (max-width: 768px) {
-    .slide-content{
-      margin: 0 10px;
-    }
-    .swiper-navBtn{
-      display: none;
-    }
-  }
+  /* @media screen and (max-width: 768px) {
+  
+  } */
   .img-gallery{
     width: 80%;
     margin: 100px auto 50px;
@@ -595,6 +591,7 @@ a.button:hover {
   /* FOOTER */
   /* FOOTER */
   /* Footer container */
+  
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -682,30 +679,192 @@ a.button:hover {
 .footer-credits p {
   margin: 0;
 }
+/*  PRODUCTS */
+/*  PRODUCTS */
+/* Header styles */
+#Products-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F8F8;
+  padding: 30px 20px;
+}
 
-  @media (max-width: 991px) {
-  .product {
-  width: 45%;
-  }
-  }
-  
-  @media (max-width: 767px) {
-  .product {
-  width: 100%;
-  }
-  }
+#Products-header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
+#Products-header ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+#Products-header li {
+  font-size: 18px;
+  margin: 6% 10px 10px 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#Products-header li:hover {
+  transform: translateY(-5px);
+}
+
+#Products-header i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+/* 
 @media screen and (max-width: 768px) {
+
+  
+} */
+
+
+/* Set max width for the section */
+#products {
+  max-width: 1200px;
+  margin: 5% 15% 0% 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12%;
+ 
+ 
+}
+
+/* Style each product */
+.product {
+  margin-bottom: 40px;
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add hover effect on each product */
+.product:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the image */
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Style the title */
+.product h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the price */
+.product p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the button */
+.product button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: var(--color2);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color:var(--color3)
+}
+
+  /* @media (max-width: 991px) {
+
+  } */
+  
+  /* @media (max-width: 767px) {
+  
+  } */
+
+/* @media screen and (max-width: 768px) {
+ 
+} */
+
+@media (max-width: 480px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+  #Products-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #Products-header li {
+    font-size: 16px;
+    margin: 5px;
+    padding: 8px 15px;
+  }
+
+  #Products-header i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  /* .product {
+    width: 45%;
+    } */
+  .product {
+    width: 100%;
+    }
   .nav-btn {
     visibility: hidden;
   }
   .swiper-pagination-bullet {
     visibility: visible;
   }
-}
-
-@media (max-width: 480px) {
     /* Your CSS rules here */
+    /* .logo-med{
+      width: ;
+    } */
     .nav_menu{
         display: none;
     }
@@ -801,6 +960,9 @@ a.button:hover {
     width: 100%;
     height: 60%;
   }
+  .jigi{
+    display: none;
+  }
   /*main section*/
   .main {
     position: absolute;
@@ -846,4 +1008,11 @@ a.button:hover {
   #reviews{
     margin-bottom: 12%;
   }
+  .products{
+    width: 100%;
+    margin: 0;
+  }
+  /* .logo-med{
+    width: 50;
+  } */
 }
