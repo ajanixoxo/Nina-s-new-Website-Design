@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products | Nina Glow</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-wQ2iWs/zwA7sU6NjU6dfT/aY6ZDMTJHslX9QBHLjOQ2GX6oMXhPU+Ld6Kj1s0JWYgyZ7du4ncX9ZHdPuk/e20A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/6463f64e24.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="c/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="nina.css" />
-  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-     rel="stylesheet"
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products|Nina Glow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-wQ2iWs/zwA7sU6NjU6dfT/aY6ZDMTJHslX9QBHLjOQ2GX6oMXhPU+Ld6Kj1s0JWYgyZ7du4ncX9ZHdPuk/e20A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6463f64e24.js" crossorigin="anonymous"></script>
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+  <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  </head>
 <body>
-  <nav>
-    <div class="logo">
-      <a href="#"><img src="images/beta-logo.png"></a>
+  <nav id="nav">
+    <div class="container nav_container">
+        <a href="index.html" class="logo-med" ><img src="images/beta-logo.png" alt="logo"></a>
+        
+        <ul class="nav_menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="product.html"><i class="fa-solid fa-shop" ></i> Products</a></li>
+            <li><a href="about.html"><i class=" fas  fa-address-card" ></i> About</a></li>
+            <li><a href="cart.html"><i class="fas fa-solid fa-cart-shopping fa-beat"></i></a></li>
+            <li><a href="account.html"><i class="fas fas-light fa-user"></i></a></li>
+        </ul>
+        
+
+        <ul class="menu">
+          <li><a class="menuItem" href="product.html"><i class="fa-solid fa-shop" ></i> Products</a></li>
+          <li><a class="menuItem" href="about.html"><i class=" fas  fa-address-card" ></i> About</a></li>
+          <li><a class="menuItem" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a  class="menuItem" href="cart.html"><i class="fas fa-solid fa-cart-shopping fa-beat"></i></a></li>
+          <li><a  class="menuItem" href="account.html"><i class="fas fas-light fa-user"></i></a></li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon fa-solid fa-bars"></i>
+          <i class="closeIcon fa-solid fa-xmark"></i>
+        </button>
     </div>
-    <ul class="nav-links">
-      <li><a href="nina.html"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="product.html"><i class="fas fa-shopping-bag"></i> Products</a></li>
-      <li><a href="#"><i class="fas fa-book"></i> Blog</a></li>
-      <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
-      <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
-    </ul>
-  </nav>
+    
+</nav>
+<section class="after-nav">
+  <h1>Nina's Glow</h1>
+  <div class="search">
+    <input type="search" id="search-box" placeholder="search....">
+    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+    <i class="fa-solid fa-magnifying-glass" id="search-btn2"></i>
+  </div>
+</section>
   <header id="Products-header">
      <h1>Products</h1>
      <ul>
       <li><i class="fas fa-smile"></i> Face Cream </li>
-      <li><i class="fas fa-water-bottle"></i> Body Cream</li>
-      <li><i class="fas fa-flask"></i> Face Serum</li>
+      <li><i class="fa-solid fa-bottle-droplet"></i></i> Body Cream</li>
+      <li><i class="fa-solid fa-vial"></i> Face Serum</li>
       <li><i class="fas fa-bacterium"></i> Acne Cream</li>
       <li><i class="fas fa-soap"></i> Soap</li>
       <li><i class="fas fa-kiss-wink-heart"></i> Lip Kit</li>
@@ -45,22 +70,65 @@
     </ul>
 
   </header>
-  
-  <!-- <section id="Products">
-    <div class="pro-h2"><h2>Our Products</h2></div>
-    
-    <div class="Product">
-      <img src="images/product3.jpg" alt="Mini Luxury Glow Soap">
-      <h3>Mini Luxury Glow Soap</h3>
-      <p>A natural and gentle soap that leaves your skin feeling clean, soft, and glowing.</p>
-      <a href="https://wa.me/p/5235742409807715/2349127618172" class="btn">Buy Now <i class="fa-brands fa-whatsapp"></i></a>
+  <section id="products">
+    <div class="product">
+      <img src="images/products/Carrot scurb.jpg" alt="Product 1">
+      <h2>Carrot Exfoliating Scurb</h2>
+      <p>₦ 6,500</p>
+      <button>Add to Cart</button>
+      <span class="favorite-icon">&#10084;</span>
     </div>
-    <div class="Product">
-      <img src="images/product10.1.png" alt="Luxury Glow Body Lotion">
-      <h3>Luxury Glow Body Lotion</h3>
-      <p>A rich and nourishing lotion that hydrates and illuminates your skin, leaving it smooth and radiant.</p>
-      <a href="https://wa.me/p/5466419236806396/2349127618172"class="btn">Buy Now <i class="fa-brands fa-whatsapp"></i></a>
-    </div> -->
+    
+    <div class="product">
+      <img src="images/products/face toner.jpg" alt="Product 2">
+      <h2>Face Toner</h2>
+      <p>₦ 6,500</p>
+      <button>Add to Cart</button>
+      <span class="favorite-icon">&#10084;</span>
+    </div>
+  
+    
+    <div class="product">
+      <img src="images/products/luxury glow lotionn.png" alt="Product 3">
+      <h2>Luxury Glow Lotion</h2>
+      <p>₦ 6,500</p>
+      <button>Add to Cart</button>
+      <span class="favorite-icon">&#10084;</span>
+    </div>
+    
+    <div class="product">
+      <img src="images/products/shea-butter.jpg" alt="Product 4">
+      <h2>Shea Butter</h2>
+      <p>₦ 6,500</p>
+      <button>Add to Cart</button>
+      <span class="favorite-icon">&#10084;</span>
+    </div>
+    </div>
+    <div class="product">
+      <img src="images/products/vitamin C.jpg" alt="Product 4">
+      <h2>Face Serum</h2>
+      <p>₦ 6,500</p>
+      <button>Add to Cart</button>
+      <span class="favorite-icon">&#10084;</span>
+    </div>
+    </div>
+    <div class="product">
+      <img src="images/products/vitamin C face cleaner.jpg" alt="Product 4">
+      <h2>Vitamin C face cleaner</h2>
+      <p>₦ 6,500</p>
+      <button>Add to Cart</button>
+      <span class="favorite-icon">&#10084;</span>
+    </div>
+    </div>
+    
+
+  </section>
+  <div class="pagination">
+    <button>1</button>
+    <button>2</button>
+  </div>
+  
+
 
     <footer>
         <div class="footer-container">
@@ -94,3 +162,7 @@
           <p>&copy; 2023 Nina's Glow. All rights reserved.</p>
         </div>
       </footer>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>
