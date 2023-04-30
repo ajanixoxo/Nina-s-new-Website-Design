@@ -1,8 +1,11 @@
+// window.prompt('hello')
+
 window.addEventListener('scroll', () => {
     document.querySelector('#nav').classList.toggle
     ('window-scroll', window.scrollY > 0)
     document.querySelector("nav").style.transition = "400ms ease-out"
 })
+const swup = new Swup();
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -58,7 +61,6 @@ const searchBtn = document.getElementById("search-btn");
 const searchBtn2 = document.getElementById("search-btn2");
 const searchBox = document.getElementById("search-box");
 searchBtn.onclick = function() {
-   
    searchBox.style.display= "flex";
    searchBtn.style.display="none";
    searchBtn2.style.display="flex";
