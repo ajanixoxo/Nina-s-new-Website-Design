@@ -920,6 +920,10 @@ html.is-leaving .transition-fade {
 
 
 @media (max-width: 480px) {
+  #about-header #hr{
+    margin-top: 10rem;
+   
+  }
   .about-land img {
     width: 50%;
    height: 100%;
