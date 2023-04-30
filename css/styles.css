@@ -866,7 +866,8 @@ transition: 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  background: url(/images/bg-texture.jpg);
+ 
 }
 /* .about-land div{
   color: black;
@@ -885,7 +886,7 @@ transition: 0.3s ease-in-out;
 .land-info h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  color: black;  
+  color: white;  
   margin-bottom: 30px;
   font-family: Poppins;
   transition: 0.5s ease-in-out;
