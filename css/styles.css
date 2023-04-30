@@ -861,7 +861,7 @@ transition: 0.3s ease-in-out;
 }
 .about-land{
   width: 100%;
-
+  background-color: black;
   height: 70vh;
   display: flex;
   justify-content: space-between;
