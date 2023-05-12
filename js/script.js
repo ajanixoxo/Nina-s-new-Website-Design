@@ -47,7 +47,8 @@ var swiper = new Swiper(".mySwiper", {
       }
       
      
-  } menuItems.forEach( 
+  } 
+menuItems.forEach( 
     function(menuItem) { 
       menuItem.addEventListener("click", toggleMenu); 
       
@@ -58,20 +59,39 @@ var swiper = new Swiper(".mySwiper", {
 
  const search = document.querySelector('.search')
 const searchBtn = document.getElementById("search-btn");
-const searchBtn2 = document.getElementById("search-btn2");
-const searchBox = document.getElementById("search-box");
-searchBtn.onclick = function() {
-   searchBox.style.display= "flex";
-   searchBtn.style.display="none";
-   searchBtn2.style.display="flex";
-}
-searchBtn2.onclick = function() {
-  searchBox.style.display = "none";
-  searchBtn.style.display = "flex"
-  searchBtn2.style.display = "none"
 
-  
-}
+const searchBox = document.getElementById("search-box");
+
+const searchPro = () => {
+  console.log('clicked')
+  const searchpro = searchBox.value.toUpperCase();  
+ const storeitems = document.getElementById("product-list");
+  const productPage = document.querySelectorAll(".product-page");
+  const proDetalis = storeitems.getElementsByTagName('h2');
+ 
+
+  for(var i = 0; i < proDetalis.length; i++) {
+    let match = productPage[i].getElementsByTagName('h2')[0];
+    if(match){
+      let textvalue = match.textContent || match.innerHTML
+
+      if(textvalue.toUpperCase().indexOf(searchpro) > -1){
+        productPage[i].style.display = "";
+      } else {
+        productPage[i].style.display = "none";
+      }
+    }
+    else{
+      if(textvalue.toUpperCase().indexOf(searchpro) < -1){
+        productPage[i].style.display = "none";
+      } else {
+        productPage[i].style.display = "";
+      }
+    }
+    }
+  }
+
+
 var swipers = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
