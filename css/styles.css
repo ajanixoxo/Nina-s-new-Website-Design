@@ -419,19 +419,26 @@ a.button:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .pro-cate{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .Categories h1{
+    font-family: lato;
+    font-size: 30;
   }
-  .pro-cates {
-    display: flex;
+  .pro-cate{
+  display: flex;
+   width: 100%;
+   height: 100%;
+  
+ 
+  }
+  .pro-cates{
     list-style: none;
     margin: 10px;
-    background-color: #f1f1f1;
-    padding: 10px;
+    width: 70%;
     border-radius: 10px;
-    height: 95%;
+    height: 85%;
+    
+    
+    
   }
   
   .category-image {
@@ -440,27 +447,29 @@ a.button:hover {
   }
   
   .category-image img {
-    max-width: 100%;
-    height: 60%;
-    width: 100%;
+    max-width: 80%;
+    height: 70%;
+    width: 75%;
     object-fit: contain;
     text-align: center;
-    margin-top: 30%;
-
+    margin-top: 10%;
   }
+  
   
   .category-text {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     width: 50%;
+    height: 15%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     font-family: monospace;
+    
   }
   
   
@@ -585,7 +594,7 @@ a.button:hover {
   }
   
   .swiper-navBtn{
-    color: #6E93f7;
+    color: hsl(224, 42%, 50%);
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover{
@@ -593,7 +602,7 @@ a.button:hover {
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after{
-    font-size: 35px;
+    font-size: 5px;
     color: black;
   }
   .swiper-button-next{
@@ -1258,22 +1267,25 @@ padding-top: 3%;
   .products .product-land{
      width: 90%;
   }
+  .pro-cates{
+    width: 100%;
+   
   
+  }
   .pro-cate{
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   flex-direction: column;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;  
+    width: 100%;
+    margin-left: 0;
+    overflow: hidden;
   }
-  .pro-cates {
-   width: 100%;
-   height: 80%;
-  }
+ 
   
-  .category-image {
-    align-items: center;
-    padding: 10px;
+  .category-image span {
+    font-size: 20px;
+    color: black;
   }
+
   
   .category-image img {
     height: 90%;
