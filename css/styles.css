@@ -353,6 +353,7 @@ a.button:hover {
   justify-content: space-between;
   max-width: 1000px;
   width: 100%;
+     left: 20%;
   }
   
   .products  .product-land {
