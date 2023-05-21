@@ -838,7 +838,6 @@ a.button:hover {
 }
 #product-list .product-page h2 {
   margin-top: 20px;
-  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -1060,9 +1059,7 @@ padding-top: 3%;
     border: 12px solid rgba(0, 128, 0, 0.481);
     
   }
-  .product-page{
-    width: 100%;
-  }
+ 
 
   .slide-content{
     margin: 0 10px;
@@ -1260,10 +1257,7 @@ padding-top: 3%;
   #reviews{
     margin-bottom: 12%;
   }
-  .products{
-    width: 100%;
-    margin: 0;
-  }
+ 
   .products .product-land{
      width: 90%;
   }
@@ -1296,4 +1290,25 @@ padding-top: 3%;
   /* .logo-med{
     width: 50;
   } */
+  #product-list{
+    width:75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product-page{
+    width: 40%;
+  }
+  .product-page > h2{
+    font-size:70%;
+    font-family: lato;
+  }
+  .product-page > p{
+    font-size: 14px;
+    font-family: lato;
+  }
+  .product-page  button{
+    font-size: 10px;
+    width: 100%;
+  }
 }
